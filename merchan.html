@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tickets & Merchandise - Neon Waves</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Neon Waves</div>
+    <nav>
+      <a href="index.html" >Home</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="merchan.html" class="active">Merchandise</a>
+      <a href="login.html">Login</a> 
+    </nav>
+  </header>
+
+  <main class="content-section">
+    <h2>MERCHANDISE</h2>
+    <div class="merch-layout">
+        <section class="merch-section">
+        <h3>Official Merchandise</h3>
+        <div class="card-grid">
+          <div class="card merch-card">
+            <img src="images/tshirt.JPG" alt="Neon waves band tshirt"
+            <h4>Band T-Shirt</h4>
+            <p>Black cotton tee with Neon Waves logo.</p>
+            <p class="price">₹799</p>
+            <button class="btn-secondary" onclick="addToCart('Band T-Shirt')">
+              Buy Now
+            </button>
+          </div>
+          <div class="card merch-card">
+            <img src="images/hoodie.jpg" alt="Neon waves hoodie"
+            <h4>Hoodie</h4>
+            <p>Comfort fit hoodie with album artwork.</p>
+            <p class="price">₹1,499</p>
+            <button class="btn-secondary" onclick="addToCart('Hoodie')">
+              Buy Now
+            </button>
+          </div>
+          <div class="card merch-card">
+            <img src="images/band.jpg" alt="Neon waves band"
+            <h4>Wristband</h4>
+            <p>Silicone wristband with our band name.</p>
+            <p class="price">₹199</p>
+            <button class="btn-secondary" onclick="addToCart('Wristband')">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Vaibhav Pandey. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
