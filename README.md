@@ -2,7 +2,7 @@
 
 A modern, fully responsive band website designed with a sleek dark-theme UI, smooth layouts, and interactive features. This project showcases a complete multi-page website including ticket booking, merchandise store, music section, and user authentication pages.
 
-Features
+🚀 Features
 🔹 Home Page
 
 Clean hero section introducing the band
@@ -11,7 +11,7 @@ Smooth navigation bar
 
 Modern dark gradient background
 
-Ticket Booking
+🎫 Ticket Booking
 
 Functional form UI for selecting cities, ticket types, and quantities
 
@@ -19,7 +19,7 @@ Fully centered, responsive layout
 
 Stylish gradient “Confirm Booking” button
 
-Merchandise Store
+🛍️ Merchandise Store
 
 Product cards with images, prices, and "Buy Now" buttons
 
@@ -27,13 +27,17 @@ Responsive grid layout
 
 Minimal, modern design
 
-Login & Signup Pages
+🎵 Music Section
+
+Dedicated page for music/albums (optional to add audio players)
+
+🔐 Login & Signup Pages
 
 Clean, simple forms
 
 Fully responsive
 
-Responsive Design
+📱 Responsive Design
 
 The entire website adjusts smoothly across:
 
@@ -44,7 +48,7 @@ Tablet
 Mobile devices
 Using CSS Flexbox, Grid, and media queries.
 
-Tech Stack
+🎨 Tech Stack
 
 HTML5
 
@@ -52,7 +56,7 @@ CSS3 (Flexbox, Grid, Gradients, Media Queries)
 
 JavaScript (for form interactions)
 
-About This Project
+🧑‍💻 About This Project
 
 This website was built as a personal web development project to learn:
 
