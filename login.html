@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Neon Waves</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Neon Waves</div>
+    <nav>
+      <a href="index.html" >Home</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="merchan.html">Merchandise</a>
+      <a href="login.html" class="active">Login</a> 
+    </nav>
+  </header>
+
+  <!-- LOGIN FORM -->
+  <section class="form-wrapper">
+    <form class="form-card" onsubmit="handleLogin(event)">
+      <h2>Member Login</h2>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required />
+
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Enter your password" required />
+
+      <button type="submit" class="btn-primary full-width login-btn">Login</button>
+
+      <p class="form-note">
+        Don’t have an account? 
+        <a href="signup.html">Sign Up</a>
+      </p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Vaibhav Pandey. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+      alert("Login feature is demo only. You can connect this form to a backend later.");
+    }
+  </script>
+</body>
+</html>

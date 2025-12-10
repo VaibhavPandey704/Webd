@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tickets & Merchandise - Neon Waves</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Neon Waves</div>
+    <nav>
+      <a href="index.html" >Home</a>
+      <a href="tickets.html" class="active">Tickets</a>
+      <a href="merchan.html">Merchandise</a>
+      <a href="login.html">Login</a> 
+    </nav>
+  </header>
+
+  <main class="content-section">
+    <h2 class="ticket-layout">Book Concert Tickets</h2>
+
+    <div class="ticket-layout">
+
+      <!-- TICKET BOOKING FORM -->
+      <form class="form-card" onsubmit="handleTicketBooking(event)">
+        <h3>Concert Booking</h3>
+
+        <label for="concert-city">Select City</label>
+        <select id="concert-city" required>
+          <option value="">-- Choose a city --</option>
+          <option value="delhi">Delhi - 15 Jan 2026</option>
+          <option value="mumbai">Mumbai - 22 Jan 2026</option>
+          <option value="bangalore">Bangalore - 29 Jan 2026</option>
+        </select>
+
+        <label for="ticket-type">Ticket Type</label>
+        <select id="ticket-type" required>
+          <option value="">-- Choose type --</option>
+          <option value="regular">Regular</option>
+          <option value="vip">VIP</option>
+          <option value="vvip">VVIP</option>
+        </select>
+
+        <label for="ticket-qty">Number of Tickets</label>
+        <input
+          id="ticket-qty"
+          type="number"
+          min="1"
+          max="10"
+          value="1"
+          required
+        />
+
+        <button type="submit" class="btn-primary full-width confirm-btn">
+          Confirm Booking
+        </button>
+      </form>
+      </div>
+      </main>
+
+<footer class="footer">
+  <p>&copy; 2025 Vaibhav Pandey. All rights reserved.</p>
+</footer>
+
+  <script>
+    function handleTicketBooking(event) {
+      event.preventDefault();
+      const city = document.getElementById("concert-city").value;
+      const type = document.getElementById("ticket-type").value;
+      const qty = document.getElementById("ticket-qty").value;
+
+      if (!city || !type || !qty) {
+        alert("Please fill all the details.");
+        return;
+      }
+
+      alert(
+        "Your booking request is recorded!\n" +
+        "City: " + city.toUpperCase() +
+        "\nTicket type: " + type.toUpperCase() +
+        "\nQuantity: " + qty 
+        
+      );
+    }
+
+    function addToCart(itemName) {
+      alert(itemName + " added to cart");
+    }
+  </script>
+</body>
+</html>
